@@ -33,16 +33,14 @@ git clone https://github.com/Ikarows/cos-template.git
 
 ## 技术栈
 
-```
-1.vue3
-2.vite3
-3.typescript
-4.router
-5.axios
-6.pinia
-7.eslint
-8.mocks
-```
+- Vue3
+- Vite3
+- TypeScript
+- VueRouter4
+- Axios
+- Pinia
+- Eslint
+- Mocks
 
 ## 开发
 
