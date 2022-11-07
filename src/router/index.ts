@@ -20,7 +20,7 @@ const router = createRouter({
 })
 
 // 路由拦截
-router.beforeEach((to, from, next) => {
+router.beforeEach((to: any, from: any, next: any) => {
   document.title = to.meta.title
   next()
 })
