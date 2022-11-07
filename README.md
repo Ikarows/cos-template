@@ -57,4 +57,7 @@ npm run serve
 
 # build
 npm run build
+
+# eslint
+npm run lint
 ```
