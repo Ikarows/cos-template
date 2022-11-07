@@ -4,7 +4,7 @@
 <h1>cos-template</h1>
 
 <p>
-   <strong>vite + vue3 + ts 开箱即用现代开发模板</strong>,
+   <strong>vue3 + vite + ts 开箱即用现代开发模板</strong>,
 </p>
 
 <p>
