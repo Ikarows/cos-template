@@ -18,6 +18,7 @@
 <img src="https://img.shields.io/badge/vite-3.2.0-brightgreen">
 <img src="https://img.shields.io/badge/typescript-4.6.4-brightgreen">
 <img src="https://img.shields.io/badge/vueRouter-4.1.6-brightgreen">
+<br />
 <img src="https://img.shields.io/badge/axios-1.1.3-brightgreen">
 <img src="https://img.shields.io/badge/pinia-2.0.23-brightgreen">
 <img src="https://img.shields.io/badge/eslint-8.27.0-brightgreen">
