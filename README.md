@@ -105,7 +105,7 @@ npm run lint
 
 ## 自动化部署
 
-- upload.cjs 文件中配置
+- upload.mjs 文件中配置
 
 **例子如下**
 
