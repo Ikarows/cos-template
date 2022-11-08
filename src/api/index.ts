@@ -1,4 +1,5 @@
-import {get, post} from '../config/request'
+import { get, post } from '@/config/request'
 
-export const hitokoto = p => get('/?c=b', p)
-export const postDemo = p => post('/?c=b', p)
+export const login = (p = '') => get('/user/login', p)
+
+export const postDemo = (p = '') => post('/?c=b', p)

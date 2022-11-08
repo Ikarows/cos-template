@@ -1,17 +1,13 @@
-import {defineStore} from "pinia";
- 
-export const userIndex = defineStore('index', {
-    state: () => {
-        return {
-           demo: '1111'
-        }
-    },
+import { defineStore } from 'pinia'
 
-    getters: {
-
-    },
-
-    actions: {
- 
+export const auth = defineStore('auth', {
+  state: () => {
+    return {
+      token: ''
     }
+  },
+
+  getters: {},
+
+  actions: {}
 })

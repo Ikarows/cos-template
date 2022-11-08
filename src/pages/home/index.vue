@@ -1,11 +1,11 @@
 <template></template>
 
 <script lang="ts" setup>
-import axios from 'axios'
-import {onMounted} from 'vue'
+import { login } from '@/api'
+import { onMounted } from 'vue'
 
 onMounted(() => {
-  axios.get('/user/login').then(res => {
+  login().then(res => {
     console.log(res)
   })
 })
