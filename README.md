@@ -40,7 +40,7 @@ git clone https://github.com/Ikarows/cos-template.git
 - Axios
 - Pinia
 - Eslint
-- Mocks
+- Mock
 
 ## 开发
 
