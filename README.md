@@ -13,6 +13,14 @@
   </sub>
 </p>
 
+<img src="https://img.shields.io/badge/vue-3.2.41-brightgreen">
+<img src="https://img.shields.io/badge/vite-3.2.0-brightgreen">
+<img src="https://img.shields.io/badge/typescript-4.6.4-brightgreen">
+<img src="https://img.shields.io/badge/vueRouter-4.1.6-brightgreen">
+<img src="https://img.shields.io/badge/axios-1.1.3-brightgreen">
+<img src="https://img.shields.io/badge/pinia-2.0.23-brightgreen">
+<img src="https://img.shields.io/badge/eslint-8.27.0-brightgreen">
+<img src="https://img.shields.io/badge/mockjs-1.1.0-brightgreen">
 </div>
 
 <br>
