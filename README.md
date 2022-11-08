@@ -13,6 +13,7 @@
   </sub>
 </p>
 
+<img src="https://shields.io/badge/node-%3E%3D%2016.0.0-brightgreen">
 <img src="https://img.shields.io/badge/vue-3.2.41-brightgreen">
 <img src="https://img.shields.io/badge/vite-3.2.0-brightgreen">
 <img src="https://img.shields.io/badge/typescript-4.6.4-brightgreen">
