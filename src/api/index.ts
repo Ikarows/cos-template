@@ -1,5 +1,5 @@
 import { get, post } from '@/config/request'
 
-export const login = (p = '') => get('/user/login', p)
+export const login = (p: string) => get('/user/login', p)
 
-export const postDemo = (p = '') => post('/?c=b', p)
+export const postDemo = (p: string) => post('/?c=b', p)

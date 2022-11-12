@@ -15,7 +15,7 @@ export default defineConfig({
     vue(),
 
     // MOCK
-    viteMockServe({
+    viteMockServe({ 
       mockPath: './src/mock/', //mock文件地址
       localEnabled: localEnabled, // 开发打包开关
       prodEnabled: prodEnabled, // 生产打包开关 // 这样可以控制关闭mock的时候不让mock打包到最终代码内

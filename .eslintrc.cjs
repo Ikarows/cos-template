@@ -7,9 +7,11 @@ module.exports = {
   extends: ['@vue/prettier', 'plugin:vue/vue3-essential', 'eslint:recommended'],
   parserOptions: {
     ecmaVersion: 13,
+    //parser: 'babel-eslint',
     sourceType: 'module'
   },
-  plugins: ['vue'],
+  parser: 'vue-eslint-parser',
+  plugins: ['vue', 'prettier', '@typescript-eslint'],
   rules: {
     'prettier/prettier': 'warn'
   }
