@@ -3,13 +3,13 @@
  * 请求拦截、相应拦截、错误统一处理
  */
 import axios from 'axios'
+import qs from 'qs'
 import { auth } from '@/store'
 import router from '@/router'
-import qs from 'qs'
 
 const store = auth()
 
-//axios.defaults.baseURL = process.env.VUE_APP_API_URL,
+// axios.defaults.baseURL = process.env.VUE_APP_API_URL,
 axios.defaults.timeout = 10000 // 10s
 
 // post请求头
@@ -20,10 +20,10 @@ axios.defaults.headers.post['Content-Type'] = 'application/json;charset=UTF-8'
 axios.defaults.headers.post['Access-Control-Allow-Origin-Type'] = '*'
 
 // 刷新页面重新设置token进store
-sessionStorage.token ? store.token = sessionStorage.token : ''
+if (sessionStorage.token) store.token = sessionStorage.token
 
 axios.interceptors.request.use(
-  function (config: any) {
+  (config: any) => {
     // 在发送请求之前做某件事
     if (config.method === 'post' || config.method === 'put' || config.method === 'delete') {
       // 序列化
@@ -49,16 +49,15 @@ axios.interceptors.request.use(
 )
 
 axios.interceptors.response.use(
-  function (config: any) {
+  (config: any) => {
     if (config.status === 200 || config.status === 204) {
       return Promise.resolve(config)
-    } else {
-      return Promise.reject(config)
     }
+    return Promise.reject(config)
 
     // return config;
   },
-  function (error: { response: { status: any } }) {
+  (error: { response: { status: any } }) => {
     // return Promise.reject(error)
 
     if (error.response.status) {
@@ -85,7 +84,7 @@ axios.interceptors.response.use(
           //   forbidClick: true
           // });
           // 清除token
-          /*store.dispatch('FedLogOut').then(() => {
+          /* store.dispatch('FedLogOut').then(() => {
             // 跳转登录页面，并将要浏览的页面fullPath传过去，登录成功后跳转需要访问的页面
             router.replace({
               path: '/login',
@@ -93,7 +92,7 @@ axios.interceptors.response.use(
                 // redirect: router.currentRoute.fullPath
               }
             })
-          })*/
+          }) */
           break
 
         // 404请求不存在
@@ -113,13 +112,12 @@ axios.interceptors.response.use(
         // });
       }
       return Promise.reject(error.response)
-    } else {
-      // 处理断网的情况
-      // eg:请求超时或断网时，更新state的network状态
-      // network状态在app.vue中控制着一个全局的断网提示组件的显示隐藏
-      // 关于断网组件中的刷新重新获取数据，会在断网组件中说明
-      //store.commit('changeNetwork', false)
     }
+    // 处理断网的情况
+    // eg:请求超时或断网时，更新state的network状态
+    // network状态在app.vue中控制着一个全局的断网提示组件的显示隐藏
+    // 关于断网组件中的刷新重新获取数据，会在断网组件中说明
+    // store.commit('changeNetwork', false)
   }
 )
 

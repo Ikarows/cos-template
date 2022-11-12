@@ -1,9 +1,9 @@
-'use strict'
 // 引入scp2
 import client from 'scp2'
 // 下面三个插件是部署的时候控制台美化所用 可有可无
 import ora from 'ora'
 import chalk from 'chalk'
+
 const spinner = ora(chalk.green('正在发布到服务器...'))
 spinner.start()
 

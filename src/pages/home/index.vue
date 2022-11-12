@@ -1,8 +1,8 @@
-<template></template>
+<template>&nbsp;</template>
 
 <script lang="ts" setup>
-import { login } from '@/api'
 import { onMounted } from 'vue'
+import { login } from '@/api'
 
 onMounted(() => {
   login().then(res => {

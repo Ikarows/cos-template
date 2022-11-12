@@ -11,7 +11,7 @@ module.exports = {
     sourceType: 'module'
   },
   parser: 'vue-eslint-parser',
-  plugins: ['vue', 'prettier', '@typescript-eslint'],
+  plugins: ['vue'],
   rules: {
     'prettier/prettier': 'warn'
   }

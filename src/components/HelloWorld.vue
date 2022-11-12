@@ -28,9 +28,8 @@ const count = ref(0)
 
   <p>
     Check out
-    <a href="https://vuejs.org/guide/quick-start.html#local" target="_blank"
-      >create-vue</a
-    >, the official Vue + Vite starter
+    <a href="https://vuejs.org/guide/quick-start.html#local" target="_blank">create-vue</a>, the official Vue + Vite
+    starter
   </p>
   <p>
     Install
@@ -41,7 +40,6 @@ const count = ref(0)
 </template>
 
 <style scoped>
-
 .logo {
   height: 6em;
   padding: 1.5em;

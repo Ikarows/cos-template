@@ -8,9 +8,9 @@ const routes: Array<RouteRecordRaw> = [
     },
     component: () => import('@/pages/home/index.vue')
   },
-  { 
-    path: '/', 
-    redirect: '/home' 
+  {
+    path: '/',
+    redirect: '/home'
   }
 ]
 
