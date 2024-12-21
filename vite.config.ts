@@ -57,6 +57,14 @@ export default defineConfig({
     chunkSizeWarningLimit: 1500 // chunk 大小警告的限制（以 kbs 为单位）
   },
 
+  css: {
+    preprocessorOptions: {
+      scss: {
+      additionalData: `@use "src/assets/css/globalCss.scss" as *;`
+      }
+    }
+  },
+
   base: './', // 打包路径
   server: {
     // port: 4000, // 服务端口号

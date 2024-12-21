@@ -1,0 +1,5 @@
+$fsz: 50;
+
+@function rem($val) {
+  @return calc($val / $fsz) * 1rem;
+}
