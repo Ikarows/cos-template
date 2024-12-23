@@ -60,7 +60,9 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-      additionalData: `@use "src/assets/css/globalCss.scss" as *;`
+        additionalData: `@use "src/assets/css/globalCss.scss" as *;`,
+        silenceDeprecations: ['legacy-js-api'],
+        api: 'modern-compiler' // or 'modern'
       }
     }
   },
