@@ -60,7 +60,7 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@use "src/assets/css/globalCss.scss" as *;`,
+        additionalData: `@use "/src/assets/css/globalCss.scss" as *;`, // `@import "@/assets/css/globalCss.scss";`,//
         silenceDeprecations: ['legacy-js-api'],
         api: 'modern-compiler' // or 'modern'
       }
@@ -69,6 +69,7 @@ export default defineConfig({
 
   base: './', // 打包路径
   server: {
+    host: "0.0.0.0",
     // port: 4000, // 服务端口号
     open: true, // 服务启动时是否自动打开浏览器
     cors: true // 允许跨域

@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+  import { ref } from 'vue'
 
-defineProps<{ msg: string }>()
+  defineProps<{ msg: string }>()
 
-const count = ref(0)
+  const count = ref(0)
 </script>
 
 <template>
@@ -16,7 +16,7 @@ const count = ref(0)
     </a>
   </div>
 
-  <h1>{{ msg }}</h1>
+  <h1>{{ msg }} 最新岗位</h1>
 
   <div class="card">
     <button type="button" @click="count++">count is {{ count }}</button>
@@ -39,20 +39,20 @@ const count = ref(0)
   <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
+<style lang="scss" scoped>
+  .logo {
+    height: rem(220);
+    padding: 1.5em;
+    will-change: filter;
+  }
+  .logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+  .logo.vue:hover {
+    filter: drop-shadow(0 0 2em #42b883aa);
+  }
 
-.read-the-docs {
-  color: #888;
-}
+  .read-the-docs {
+    color: #888;
+  }
 </style>
